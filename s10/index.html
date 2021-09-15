@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<!-- responsive meta tag -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Bootstrap Flex</title>
+	<!-- bootstrap css -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+</head>
+<body>
+
+<div class="container">
+	<div class="row">
+		<div class="text-center bg-warning col-md-6 mx-md-auto">
+			<h1 class="text-center">Bootstrap Flex</h1>
+		</div>
+	</div>
+</div>
+	<!-- Flexbox is used to manipulate or layout our lements in one direction. This can be dont extensively in CSS, however using bootstrap we can add the use to our elements quickerwith the use of boostrap classes.
+
+	To add flexbox styles to your element, you have to add d-flex class to he parent element. Each of the direct child of the parent will become a flex item.
+
+	Flex Directions
+
+	By default, adding d-flex would arrange the children/flex items into a row. For block elements, it will no longer occupy the full width of its parent.
+
+	flex-row-reverse - starts our items from the opposite side(right) and reverses the order of our flex items.
+
+	flex-row starts from left to right.
+	flex-row-reverse satarts from right to left.
+
+	 -->
+	 <h4 class="text-center">Flex Row</h4>
+	 <div class="d-flex bg-dark mb-4">
+	 	<div class="bg-primary p-2">Flex Item 1</div>
+	 	<div class="bg-success p-2">Flex Item 2</div>
+	 	<div class="bg-danger p-2">Flex Item 3</div>
+	 </div>
+	 <h4 class="text-center">Flex Row Reverse</h4>
+	 <div class="bg-dark  mb-4 d-flex flex-row-reverse">
+	 	<div class="bg-primary p-2">Flex Item 1</div>
+	 	<div class="bg-success p-2">Flex Item 2</div>
+	 	<div class="bg-danger p-2">Flex Item 3</div>
+	 </div>
+	 <h4 class="text-center">Flex Column</h4>
+	 <div class="d-flex flex-column bg-dark mb-4 py-3">
+	 <div class="bg-primary p-2">Flex Item 1</div>
+	 	<div class="bg-success p-2">Flex Item 2</div>
+	 	<div class="bg-danger p-2">Flex Item 3</div></div>
+	 	<!-- span as direct children of flex parent with flex-column -->
+	 <!-- <h4 class="text-center">Flex Column</h4>
+	 <span class="d-flex flex-column bg-dark mb-4 py-3">
+	 <span class="bg-primary p-2">Flex Item 1</span>
+	 	<span class="bg-success p-2">Flex Item 2</span>
+	 	<span class="bg-danger p-2">Flex Item 3</span></span> -->
+	 	<h4 class="text-center">Flex Column Reverse</h4>
+	 	<div class="d-flex flex-column-reverse bg-dark mb-4 py-3">
+	 		<div class="bg-primary p-2">Flex Item 1</div>
+	 	<div class="bg-success p-2">Flex Item 2</div>
+	 	<div class="bg-danger p-2">Flex Item 3</div>
+	 		</div>
+	 		<!-- Justify Content -->
+	 	<h4 class="text-center">Justify Content Start</h4>
+	 	<div class="d-flex flex-row justify-content-start bg-dark mb-4 py-3">
+	 		<div class="bg-primary p-2">Flex Item 1</div>
+	 	<div class="bg-success p-2">Flex Item 2</div>
+	 	<div class="bg-danger p-2">Flex Item 3</div>
+	 		</div>
+	 	<h4 class="text-center">Justify Content Start Reverse</h4>
+	 	<div class="d-flex flex-row-reverse justify-content-start bg-dark mb-4 py-3">
+	 		<div class="bg-primary p-2">Flex Item 1</div>
+	 	<div class="bg-success p-2">Flex Item 2</div>
+	 	<div class="bg-danger p-2">Flex Item 3</div>
+	 		</div>
+	 	<h4 class="text-center">Justify Content End</h4>
+	 	<div class="d-flex flex-row justify-content-end bg-dark mb-4 py-3">
+	 		<div class="bg-primary p-2">Flex Item 1</div>
+	 	<div class="bg-success p-2">Flex Item 2</div>
+	 	<div class="bg-danger p-2">Flex Item 3</div>
+	 		</div>
+	 	<h4 class="text-center">Justify Content End Reverse</h4>
+	 	<div class="d-flex flex-row-reverse justify-content-end bg-dark mb-4 py-3">
+	 		<div class="bg-primary p-2">Flex Item 1</div>
+	 	<div class="bg-success p-2">Flex Item 2</div>
+	 	<div class="bg-danger p-2">Flex Item 3</div>
+	 		</div>
+
+	 	<h4 class="text-center">Justify Content Center</h4>
+	 	<!-- Align our items at the center of our main axis. The main axis for both flex-row and flex-row reverse are in the x-axis, therefore, centering our items horizontally, For flex-column, this will center the items vertically. -->
+
+	 	<h4 class="text-center">Justify Content Center</h4>
+	 	<div class="d-flex flex-row justify-content-center bg-dark mb-4 py-3">
+	 		<div class="bg-primary p-2">Flex Item 1</div>
+	 	<div class="bg-success p-2">Flex Item 2</div>
+	 	<div class="bg-danger p-2">Flex Item 3</div>
+	 		</div>
+	 	<h4 class="text-center">Justify Content Center Reverse</h4>
+	 	<div class="d-flex flex-row-reverse justify-content-center bg-dark mb-4 py-3">
+	 		<div class="bg-primary p-2">Flex Item 1</div>
+	 	<div class="bg-success p-2">Flex Item 2</div>
+	 	<div class="bg-danger p-2">Flex Item 3</div>
+	 		</div>
+
+	 	<!-- Align our items by adding.evenly distributing spaces in between our items. -->
+	 	<h4 class="text-center">Justify Content Between</h4>
+	 	<div class="d-flex flex-row justify-content-between bg-dark mb-4 py-3">
+	 		<div class="bg-primary p-2">Flex Item 1</div>
+	 	<div class="bg-success p-2">Flex Item 2</div>
+	 	<div class="bg-danger p-2">Flex Item 3</div>
+	 	<div class="bg-warning p-2">Flex Item 4</div>
+	 	<div class="bg-info p-2">Flex Item 5</div>
+	 		</div>
+	 	<h4 class="text-center">Justify Content Between Reverse</h4>
+	 	<div class="d-flex flex-row-reverse justify-content-between bg-dark mb-4 py-3">
+	 		<div class="bg-primary p-2">Flex Item 1</div>
+	 	<div class="bg-success p-2">Flex Item 2</div>
+	 	<div class="bg-danger p-2">Flex Item 3</div>
+	 		</div>
+	 	<!-- Align our items by distributing space AROUND your items.  Meaning, it will automatically calculate ther space remaining and add that space on both sides of your element. -->
+	 	<h4 class="text-center">Justify Content Around</h4>
+	 	<div class="d-flex flex-row justify-content-around bg-dark mb-4 py-3">
+	 		<div class="bg-primary p-2">Flex Item 1</div>
+	 	<div class="bg-success p-2">Flex Item 2</div>
+	 	<div class="bg-danger p-2">Flex Item 3</div>
+	 		</div>
+	 	<h4 class="text-center">Justify Content Around Reverse</h4>
+	 	<div class="d-flex flex-row-reverse justify-content-around bg-dark mb-4 py-3">
+	 		<div class="bg-primary p-2">Flex Item 1</div>
+	 	<div class="bg-success p-2">Flex Item 2</div>
+	 	<div class="bg-danger p-2">Flex Item 3</div>
+	 		</div>
+	 		<!-- flex-wrap will alows us to wrap our overflowing elements, such that if the children of the flex container exceeds the width. -->
+	 	<h4 class="text-center">Flex Wrap</h4>
+	 	<div class="d-flex flex-row flex-wrap justify-content-around bg-dark mb-4 py-3">
+	 		<div class="bg-primary p-2">Flex Item 1</div>
+	 	<div class="bg-success p-2">Flex Item 2</div>
+	 	<div class="bg-danger p-2">Flex Item 3</div>
+	 	<div class="bg-primary p-2">Flex Item 1</div>
+	 	<div class="bg-success p-2">Flex Item 2</div>
+	 	<div class="bg-danger p-2">Flex Item 3</div>
+	 	<div class="bg-primary p-2">Flex Item 1</div>
+	 	<div class="bg-success p-2">Flex Item 2</div>
+	 	<div class="bg-danger p-2">Flex Item 3</div>
+	 	<div class="bg-primary p-2">Flex Item 1</div>
+	 	<div class="bg-success p-2">Flex Item 2</div>
+	 	<div class="bg-danger p-2">Flex Item 3</div>
+	 	<div class="bg-primary p-2">Flex Item 1</div>
+	 	<div class="bg-success p-2">Flex Item 2</div>
+	 	<div class="bg-danger p-2">Flex Item 3</div>
+	 	<div class="bg-primary p-2">Flex Item 1</div>
+	 	<div class="bg-success p-2">Flex Item 2</div>
+	 	<div class="bg-danger p-2">Flex Item 3</div>
+	 	<div class="bg-primary p-2">Flex Item 1</div>
+	 	<div class="bg-success p-2">Flex Item 2</div>
+	 	<div class="bg-danger p-2">Flex Item 3</div>
+	 	<div class="bg-primary p-2">Flex Item 1</div>
+	 	<div class="bg-success p-2">Flex Item 2</div>
+	 	<div class="bg-danger p-2">Flex Item 3</div>
+	 	<div class="bg-primary p-2">Flex Item 1</div>
+	 	<div class="bg-success p-2">Flex Item 2</div>
+	 	<div class="bg-danger p-2">Flex Item 3</div>
+	 	<div class="bg-primary p-2">Flex Item 1</div>
+	 	<div class="bg-success p-2">Flex Item 2</div>
+	 	<div class="bg-danger p-2">Flex Item 3</div>
+	 	<div class="bg-primary p-2">Flex Item 1</div>
+	 	<div class="bg-success p-2">Flex Item 2</div>
+	 	<div class="bg-danger p-2">Flex Item 3</div>
+	 		</div>
+	 	<!-- Align Items -->
+	 	<!-- align-item - aligns your items vertically for flex-row and flex-frow-reverse. For flex-column, this will align items horizontally. -->
+	 	<h3 class="text-center">Align Items</h3>
+		<!-- align-items-start - align items at the start of the y-axis or cross axis. For flex-row and flex-row-reverse, the cross axis is the y-axis and the main axis is the x-axis
+
+		For flex-column and flex-column-reverse, the cross axis is the x-axis and the main-axis is the x-axis
+	
+		 -->
+		 <h4 class="text-center">align-items-start</h4>
+	 	<div class="d-flex flex-row  align-items-start bg-dark mb-4" style="height: 300px;">
+	 		<div class="bg-primary p-2">Flex Item 1</div>
+	 		<div class="bg-success p-2">Flex Item 2</div>
+	 		<div class="bg-danger p-2">Flex Item 3</div>
+	 	</div>
+	 	 -->
+		 <h4 class="text-center">align-items-start reverse</h4>
+	 	<div class="d-flex flex-row-reverse  align-items-start bg-dark mb-4" style="height: 300px;">
+	 		<div class="bg-primary p-2">Flex Item 1</div>
+	 		<div class="bg-success p-2">Flex Item 2</div>
+	 		<div class="bg-danger p-2">Flex Item 3</div>
+	 	</div>
+	 	 <h4 class="text-center">align-items-end</h4>
+	 	<div class="d-flex flex-row  align-items-end bg-dark mb-4" style="height: 300px;">
+	 		<div class="bg-primary p-2">Flex Item 1</div>
+	 		<div class="bg-success p-2">Flex Item 2</div>
+	 		<div class="bg-danger p-2">Flex Item 3</div>
+	 	</div>
+		 <h4 class="text-center">align-items-end reverse</h4>
+	 	<div class="d-flex flex-row-reverse  align-items-end bg-dark mb-4" style="height: 300px;">
+	 		<div class="bg-primary p-2">Flex Item 1</div>
+	 		<div class="bg-success p-2">Flex Item 2</div>
+	 		<div class="bg-danger p-2">Flex Item 3</div>
+	 	</div>
+	 	 <h4 class="text-center">align-items-center</h4>
+	 	<div class="d-flex flex-row  align-items-center bg-dark mb-4" style="height: 300px;">
+	 		<div class="bg-primary p-2">Flex Item 1</div>
+	 		<div class="bg-success p-2">Flex Item 2</div>
+	 		<div class="bg-danger p-2">Flex Item 3</div>
+	 	</div>
+		 <h4 class="text-center">align-items-center reverse</h4>
+	 	<div class="d-flex flex-row-reverse  align-items-center bg-dark mb-4" style="height: 300px;">
+	 		<div class="bg-primary p-2">Flex Item 1</div>
+	 		<div class="bg-success p-2">Flex Item 2</div>
+	 		<div class="bg-danger p-2">Flex Item 3</div>
+	 	</div>
+	 	<h4 class="text-center">Aligning Vertically and Horizontally</h4>
+	 	<div class="d-flex flex-row align-items-end justify-content-around bg-dark mb-4" style="height: 300px;">
+	 		<div class="bg-primary p-2">Flex Item 1</div>
+	 		<div class="bg-success p-2">Flex Item 2</div>
+	 		<div class="bg-danger p-2">Flex Item 3</div>
+	 	</div>
+	 		<div class="d-flex flex-row align-items-end justify-content-between bg-dark mb-4" style="height: 300px;">
+	 		<div class="bg-primary p-2">Flex Item 1</div>
+	 		<div class="bg-success p-2">Flex Item 2</div>
+	 		<div class="bg-danger p-2">Flex Item 3</div>
+	 	</div>
+	 	<!-- Mini Activity -->
+	 	<h4 class="text-center">Mini Activity</h4>
+	 	<div class="bg-secondary d-flex flex-row align-items-center justify-content-center" style="height: 300px;">
+	 		<div class="bg-primary p-2">Flex Item 1</div>
+	 		<div class="bg-success p-2">Flex Item 2</div>
+	 		<div class="bg-danger p-2">Flex Item 3</div>
+	 	</div>
+	 		<div class="bg-secondary d-flex flex-row align-items-center justify-content-between" style="height: 300px;">
+	 		<div class="bg-primary p-2">Flex Item 1</div>
+	 		<div class="bg-success p-2">Flex Item 2</div>
+	 		<div class="bg-danger p-2">Flex Item 3</div>
+	 	</div>
+
+	 	<!-- flex-column with align-items and justify-content -->
+	 		<!-- 
+
+			For flex-column and flex-column-reverse, the main axis is the y-axis and the cross axis is the x-axis, 
+			Meaning for flex-column and flex-column reverse, justify-content aligns items vertically.
+			flex-column and flex-column-reverse, align-items aligns items vertically.
+	
+	 	 -->
+	 	<h2 class="text-center">Flex Column with align-items and justify-content</h2>
+	 
+	 	 <div class="bg-secondary d-flex flex-column align-items-center" style="height: 300px;">
+	 		<div class="bg-primary p-2" style="width:30%">Flex Item 1</div>
+	 		<div class="bg-success p-2" style="width:30%;">Flex Item 2</div>
+	 		<div class="bg-danger p-2" style="width:30%;">Flex Item 3</div>
+	 	</div>
+
+	 	 <div class="bg-secondary d-flex flex-column justify-content-center" style="height: 300px;">
+	 		<div class="bg-primary p-2" style="width:30%">Flex Item 1</div>
+	 		<div class="bg-success p-2" style="width:30%;">Flex Item 2</div>
+	 		<div class="bg-danger p-2" style="width:30%;">Flex Item 3</div>
+	 	</div>
+
+	 	<h4 class="text-center">Mini Activity</h4>
+	  	 <div class="bg-secondary d-flex flex-column justify-content-end" style="height: 300px;">
+	 		<div class="bg-primary p-2" style="width:30%">Flex Item 1</div>
+	 		<div class="bg-success p-2" style="width:30%;">Flex Item 2</div>
+	 		<div class="bg-danger p-2" style="width:30%;">Flex Item 3</div>
+	 	</div>
+
+	 	 <div class="bg-secondary d-flex flex-column align-items-end justify-content-center mt-3" style="height: 300px;">
+	 		<div class="bg-primary p-2" style="width:30%">Flex Item 1</div>
+	 		<div class="bg-success p-2" style="width:30%;">Flex Item 2</div>
+	 		<div class="bg-danger p-2" style="width:30%;">Flex Item 3</div>
+	 	</div>
+	 	<h4 class="text-center">Flex Column: justify-content-around and between</h4>
+	 	 <div class="bg-dark d-flex flex-column justify-content-around mt-3" style="height: 300px;">
+	 		<div class="bg-primary p-2" style="width:30%">Flex Item 1</div>
+	 		<div class="bg-success p-2" style="width:30%;">Flex Item 2</div>
+	 		<div class="bg-danger p-2" style="width:30%;">Flex Item 3</div>
+	 	</div>
+	 	<div class="bg-dark d-flex flex-column justify-content-between mt-3" style="height: 300px;">
+	 		<div class="bg-primary p-2" style="width:30%">Flex Item 1</div>
+	 		<div class="bg-success p-2" style="width:30%;">Flex Item 2</div>
+	 		<div class="bg-danger p-2" style="width:30%;">Flex Item 3</div>
+	 	</div>
+
+<!-- JS dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+</body>
+</html>
