@@ -5,12 +5,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>Portfolio Using Bootstrap</title>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
-  <div class="container">
-<!-- navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">Navbar</a>
+
+  <!-- navbar -->
+<nav class="position-sticky fixed-top navbar navbar-expand-lg navbar-dark bg-dark" style="width:100%;">
+  <a class="navbar-brand" href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDowBtk6gvEJnkioH0ErUwviNpqbXfXmRGRgJs-Q2fZDjHEr2AADK6bjWuH_otanznfr0&usqp=CAU" style="width:30px;height:30px" class="rounded-circle"></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -21,27 +22,20 @@
         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
+        <a class="nav-link" href="#affiliates">Affiliates</a>
       </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
+      <li class="nav-item">
+        <a class="nav-link" href="#tools">Tools</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contacts">Contact</a>
       </li>
     </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
   </div>
 </nav>
 <!-- end of navbar -->
+  <div class="container">
+
 
 <!-- section container fliud -->
 <div class="container-fluid text-center">
@@ -56,36 +50,36 @@
 
 <!-- card-decks -->
 <div class="card-deck text-center">
-  <div class="card">
+  <div class="card text-justify">
     <img src="./images/minato.jpg" class="card-img-top" alt="..." style="height: 30vh;">
     <div class="card-body">
-      <h5 class="card-title">Minato Namikaze</h5>
+      <h5 class="card-title text-center">Minato Namikaze</h5>
       <p class="card-text">Minato Namikaze (波風ミナト, Namikaze Minato) was the Fourth Hokage (四代目火影, Yondaime Hokage, literally meaning: Fourth Fire Shadow) of Konohagakure. <a href="#">See more</a></p>
       <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
     </div>
   </div>
-  <div class="card">
+  <div class="card text-justify">
     <img src="./images/naruto.webp" alt="..." style="height: 30vh;">
     <div class="card-body">
-      <h5 class="card-title">Uzumaki Naruto</h5>
+      <h5 class="card-title text-center">Uzumaki Naruto</h5>
       <p class="card-text">Naruto Uzumaki (うずまきナルト, Uzumaki Naruto) is a shinobi of Konohagakure's Uzumaki clan. He became the jinchūriki of the Nine-Tails on the day of his birth — a fate that caused him to be shunned by most of Konoha throughout his childhood. <a href="#">See more</a></p>
       <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
     </div>
   </div>
-  <div class="card">
+  <div class="card text-justify">
     <img src="./images/kushina.png" class="card-img-top" alt="..." style="height: 30vh;">
     <div class="card-body">
-      <h5 class="card-title">Kushina Uzumaki</h5>
+      <h5 class="card-title text-center">Kushina Uzumaki</h5>
       <p class="card-text">Kushina Uzumaki (うずまきクシナ, Uzumaki Kushina) was a Konohagakure kunoichi who originated from Uzushiogakure's Uzumaki clan. She was the second jinchūriki of the Nine-Tails. <a href="#">See more</a></p>
       <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
     </div>
   </div>
 </div>
 <!-- end of card-decks -->
-<h2 class="text-center py-3">Affiliates</h2>
+<h2 class="text-center py-3" id="affiliates">Affiliates</h2>
 <div class="row">
   <div class="order-2 order-md-2 col-12 col-md-6">
-    <h3 class="text-center text-md-left mt-1">Birthplace</h3>
+    <h3 class="text-center text-md-left mb-3">Birthplace</h3>
     <p class="text-justify">Konohagakure (木ノ葉隠れの里, Konohagakure no Sato, English TV: "Village Hidden in the Leaves" or "Hidden Leaf Village", literally meaning: Village Hidden by Tree Leaves) is the hidden village of the Land of Fire. As the village of one of the Five Great Shinobi Countries, Konohagakure has a Kage as its leader known as the Hokage, of which there have been seven in its history. Konoha resides deep within a forest at the base of a mountain known as the Hokage Rock, which has the faces of all those who have taken the office of Hokage engraved on it.It is surrounded on all sides by enormous walls.While generally seen as the most powerful of the ninja villages,Konoha has enjoyed many years of relative peace and stability.</p>
   </div>
   <!-- first card -->
@@ -96,7 +90,7 @@
 <!-- second card -->
 <div class="row mt-2">
   <div class="order-2 order-md-1 col-12 col-md-6">
-    <h3 class="text-center text-md-left mt-1">Anbu</h3>
+    <h3 class="text-center text-md-left mb-3">Anbu</h3>
     <p class="text-justify">The Anbu (暗部, English TV: Anbu Black Ops, literally meaning: Dark Side), short for Ansatsu Senjutsu Tokushu Butai (暗殺戦術特殊部隊, literally meaning: Special Assassination and Tactical Squad), are covert operatives of capable ninja that are dispatched by their village leader. There are apparently no true ranks within the Anbu; team leadership and hierarchy seem to be based on merit and experience. The leaders of the teams are called squad leaders (分隊長, Buntaichō), a position held in high regard.</p>
   </div>
    <div class="col-md-6 order-1 order-md-2 col-12">
@@ -130,7 +124,7 @@
     consequat.</p>
   </div>
 </div>
-<h3 class="text-center mt-1">Core Tools</h3>
+<h3 class="text-center mt-1" id="tools">Core Tools</h3>
 <div class="d-flex justify-content-center align-items-center my-2">
   <img src="../resources/activity-s8-s11-images/logo-html5.png" style="width:80px">
 </div>
@@ -153,11 +147,50 @@
 <img width="80" src="../resources/activity-s8-s11-images/logo-postman.png" >
 <img width="80" src="../resources/activity-s8-s11-images/logo-gitlab-ci-cd.png" >
 </div>
-
 </div>
-
+<!-- maps and contact -->
+<h3 id="contacts" class="text-center my-3">Get Connected to Us!</h3>
+<div class="row">
+  <div class="col-md-6 my-4">
+    <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=bacolod%20city%20palm%20haven&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>     
+    </div>
+    <div class="col-md-6 my-4">
+      <form>
+        <div class="form-group">
+          <label for="txt-email">Email:</label>
+          <input type="email" name="email" id="txt-email" placeholder="name@example.com" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="txt-select">Example Select:</label>
+          <select class="form-control" id="txt-select" name="sampleSelect">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="txt-textarea">Example TextArea</label>
+          <textarea class="form-control" id="txt-textarea" rows="3">
+            
+          </textarea>
+        </div>
+        <button type="submit" class="btn btn-outline-success">Submit</button>
+      </form>
+    </div>
+    </div>
 <!-- container --></div> 
-
+<footer class="bg-info text-center text-white text-lg-start d-flex flex-wrap justify-content-center">
+  <!-- Copyright -->
+  <div class="text-center p-3">
+    © 2021 Copyright:
+    <div class="text-white" href="https://mdbootstrap.com/">Jeric Moreno, Full Stack Developer.
+     All rights reserved.
+   </div>
+  </div>
+  </div>
+  <!-- Copyright -->
+</footer>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 </body>
